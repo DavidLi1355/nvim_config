@@ -30,6 +30,10 @@ return require("packer").startup(function(use)
     }
 
     use {
+        "folke/which-key.nvim"
+    }
+
+    use {
         "nvim-telescope/telescope.nvim", tag = "0.1.1",
         -- or                            , branch = "0.1.x",
         requires = { { "nvim-lua/plenary.nvim" } }
@@ -64,14 +68,37 @@ return require("packer").startup(function(use)
     }
 
     use {
-        "ggandor/leap.nvim"
+        "ggandor/leap.nvim",
+    }
+
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+        config = function()
+            require("lualine").setup {}
+        end
+    }
+
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
+    use {
+        "lukas-reineke/indent-blankline.nvim"
+    }
+
+    use {
+        "RRethy/vim-illuminate"
+    }
+
+    use {
+        "preservim/tagbar"
     }
 
     -- mini
     use {
         'echasnovski/mini.jump',
-        'echasnovski/mini.pairs',
-        'echasnovski/mini.indentscope',
         'echasnovski/mini.move',
         branch = 'stable',
     }

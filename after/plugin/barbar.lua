@@ -136,7 +136,7 @@ map('n', '<S-l>', '<Cmd>BufferNext<CR>', opts)
 map('n', '<A-H>', '<Cmd>BufferMovePrevious<CR>', opts)
 map('n', '<A-L>', '<Cmd>BufferMoveNext<CR>', opts)
 -- Pin/unpin buffer
-map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
+map('n', '<Space>bp', '<Cmd>BufferPin<CR>', opts)
 -- Close buffer
 map('n', '<A-w>', '<Cmd>BufferClose<CR>', opts)
 
